@@ -4,7 +4,12 @@ Status: Public company context
 
 ## Company overview
 
+Official Japanese company name: セールスシード株式会社
+English name: SalesSeeds Co., Ltd.
+
 SalesSeeds Co., Ltd. is a Japanese company that supports businesses in the use of IT and digital technologies.
+
+When referring to the company in Japanese, use the exact name 「セールスシード株式会社」. Do not infer or generate alternative Japanese spellings from the English name.
 
 Its main business areas include:
 
