@@ -1,85 +1,48 @@
 # SalesSeeds AI Context
 
-This repository is the public AI context layer for SalesSeeds.
+This repository is a minimal public context layer shared across AI systems such as Claude, Gemini, NotebookLM, ChatGPT, and other assistants.
 
-It is designed to provide Claude, Gemini, NotebookLM, ChatGPT, and other AI systems with a stable, curated set of company context that can be referenced without access to the private Knowledge OS.
+Its purpose is to extend AI personalization with public-safe context and common reasoning rules.
 
-## Source of truth
+This is not a public version of the private Knowledge OS.
 
-The canonical Knowledge OS is maintained separately in a private repository.
-This public repository is a curated projection of that private knowledge base.
+## Boundary
 
-Do not treat this repository as the complete record of SalesSeeds knowledge, internal operations, customer information, or historical discussions.
+Public here:
 
-## Purpose
+- public-safe personalization context
+- stable public company context
+- reasoning rules
+- interpretation rules
+- public terminology needed for consistent AI behavior
 
-The purpose of this repository is to provide external AI systems with:
+Private elsewhere:
 
-- current company context
-- approved concepts and terminology
-- current strategic direction
-- approved decisions
-- reusable knowledge
-- a consistent interpretation framework
+- Discussions
+- Observations
+- Concepts derived from internal discussion
+- Knowledge derived from internal work
+- customer context
+- confidential decisions or strategy
+- internal financial or personal information
 
-Confidential information, customer-specific information, raw observations, internal discussions, personal information, credentials, and other sensitive material must not be included.
+The private Knowledge OS remains the canonical source for internal knowledge.
 
 ## Start here
 
-AI systems should read `00_CONTEXT.md` first.
+Read `00_CONTEXT.md` first.
 
-That file defines the interpretation rules, authority order, uncertainty handling, and boundaries for all content in this repository.
+Then use `02_RULES/Reasoning_Rules.md` when reasoning about company-specific information.
 
-For a broad understanding of the current state, continue with:
-
-1. `03_CURRENT_CONTEXT/AI_Knowledge_Strategy.md`
-2. `04_DECISIONS/Public_Context_Architecture.md`
-3. `02_CONCEPTS/Knowledge_OS.md`
-4. `02_CONCEPTS/KAMOSU_AI.md`
-5. `05_KNOWLEDGE/Knowledge_Nurturing.md`
-6. `99_REFERENCES/Glossary.md`
-
-## Repository structure
+## Current structure
 
 ```text
 00_CONTEXT.md
 01_COMPANY/
-  SalesSeeds.md
-02_CONCEPTS/
-  Knowledge_OS.md
-  KAMOSU_AI.md
-03_CURRENT_CONTEXT/
-  AI_Knowledge_Strategy.md
-04_DECISIONS/
-  Public_Context_Architecture.md
-05_KNOWLEDGE/
-  Knowledge_Nurturing.md
+02_RULES/
 99_REFERENCES/
-  Glossary.md
 ```
 
-The structure may evolve as the Knowledge OS develops.
+The repository should remain intentionally small.
 
-## Semantic status matters
-
-Files in this repository may represent different levels of maturity and authority.
-
-A working concept is not automatically an adopted decision.
-A hypothesis is not evidence.
-Historical information must not override current context.
-
-Read each file's status together with the interpretation rules in `00_CONTEXT.md`.
-
-## Canonical relationship
-
-Private Knowledge OS = canonical source
-
-Public AI Context = curated consumption layer
-
-If public context and the canonical private source differ, the private Knowledge OS takes precedence.
-
-## License and reuse
-
-Public visibility does not imply permission to reuse proprietary concepts, branding, business methods, or company-specific knowledge beyond ordinary reference to this repository.
-
-Unless a separate license is explicitly added, no additional rights are granted.
+Anything placed here must be considered safe for both public internet exposure and cross-AI-provider access.
