@@ -30,21 +30,45 @@ AI systems should read `00_CONTEXT.md` first.
 
 That file defines the interpretation rules, authority order, uncertainty handling, and boundaries for all content in this repository.
 
-## Repository model
+For a broad understanding of the current state, continue with:
 
-The intended structure is:
+1. `03_CURRENT_CONTEXT/AI_Knowledge_Strategy.md`
+2. `04_DECISIONS/Public_Context_Architecture.md`
+3. `02_CONCEPTS/Knowledge_OS.md`
+4. `02_CONCEPTS/KAMOSU_AI.md`
+5. `05_KNOWLEDGE/Knowledge_Nurturing.md`
+6. `99_REFERENCES/Glossary.md`
+
+## Repository structure
 
 ```text
 00_CONTEXT.md
 01_COMPANY/
+  SalesSeeds.md
 02_CONCEPTS/
+  Knowledge_OS.md
+  KAMOSU_AI.md
 03_CURRENT_CONTEXT/
+  AI_Knowledge_Strategy.md
 04_DECISIONS/
+  Public_Context_Architecture.md
 05_KNOWLEDGE/
+  Knowledge_Nurturing.md
 99_REFERENCES/
+  Glossary.md
 ```
 
 The structure may evolve as the Knowledge OS develops.
+
+## Semantic status matters
+
+Files in this repository may represent different levels of maturity and authority.
+
+A working concept is not automatically an adopted decision.
+A hypothesis is not evidence.
+Historical information must not override current context.
+
+Read each file's status together with the interpretation rules in `00_CONTEXT.md`.
 
 ## Canonical relationship
 
