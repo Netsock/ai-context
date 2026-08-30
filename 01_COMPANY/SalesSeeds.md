@@ -2,26 +2,20 @@
 
 Status: Public company context
 
-SalesSeeds maintains this public AI context repository so that multiple AI systems can reason from a shared, curated company context even when they cannot access the private Knowledge OS.
+SalesSeeds uses this repository to provide multiple AI systems with a small, shared set of public-safe context.
 
-The public repository is intentionally narrower than the private Knowledge OS. It should contain only information that is appropriate for public AI consumption.
+The repository is intentionally narrower than the private Knowledge OS.
 
-## Context principles
+## AI usage context
 
-- Company-specific facts must come from approved context, not inference.
-- Private customer information, internal financial information, personal information, raw observations, confidential discussions, credentials, and unpublished sensitive strategy must remain outside this repository.
-- The private Knowledge OS remains the canonical source.
+SalesSeeds uses AI as part of knowledge work and decision support, not only as a text-generation tool.
 
-## AI operating model
+When reasoning about SalesSeeds, AI systems should:
 
-SalesSeeds treats AI as part of a broader knowledge and decision-support system rather than as a standalone text-generation tool.
+- use explicit company context rather than guess company-specific facts
+- distinguish current context from historical information
+- distinguish evidence, observation, interpretation, and decision
+- preserve uncertainty when information is incomplete
+- avoid treating proposals, hypotheses, or AI-generated interpretations as adopted decisions
 
-The current direction emphasizes:
-
-- company-specific context
-- knowledge structure
-- traceable reasoning
-- human judgment
-- iterative learning from observations and actions
-
-For detailed interpretation rules, read `../00_CONTEXT.md`.
+Detailed operating rules are defined in `../00_CONTEXT.md` and `../02_RULES/Reasoning_Rules.md`.
